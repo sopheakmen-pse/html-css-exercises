@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: "#333333";
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        .right-text {
+            text-align: right;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .justify-text {
+            text-align: justify;
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            font-size: 14px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 16px;
+        }
+
+        .round-image {
+            border-radius: 50%;
+        }
+
+        .sticky-image {
+            padding: 5px;
+            border: 1px solid #999999
+        }
+
+        .girl-image {
+            background-image: url("girl.png");
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <section
+            style="position: fixed; top: 0; right: 0; padding: 5px; text-align: center; background-color:#cc3300; margin: 10px; border-radius: 10px; color: #fff;">
+            <p>This is fixed text...</p>
+        </section>
+
+        <h2>Typography</h2>
+
+        <section>
+            <h3>Left text paragraph</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, modi? Odit temporibus ad esse tenetur
+                atque ex saepe? Quas asperiores eum natus sed labore vero minus quam unde a ut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero! Accusamus ratione culpa nobis,
+                assumenda error officiis dolorem velit unde. Tenetur officia iusto reiciendis velit eum, exercitationem
+                maxime molestiae alias.</p>
+        </section>
+
+        <section class="right-text">
+            <h3>Right text paragraph</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, modi? Odit temporibus ad esse tenetur
+                atque ex saepe? Quas asperiores eum natus sed labore vero minus quam unde a ut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero! Accusamus ratione culpa nobis,
+                assumenda error officiis dolorem velit unde. Tenetur officia iusto reiciendis velit eum, exercitationem
+                maxime molestiae alias.</p>
+        </section>
+
+        <section class="center-text">
+            <h3>Center text paragraph</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, modi? Odit temporibus ad esse tenetur
+                atque ex saepe? Quas asperiores eum natus sed labore vero minus quam unde a ut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero! Accusamus ratione culpa nobis,
+                assumenda error officiis dolorem velit unde. Tenetur officia iusto reiciendis velit eum, exercitationem
+                maxime molestiae alias.</p>
+        </section>
+
+        <section class="justify-text">
+            <h3>Justify text paragraph</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, modi? Odit temporibus ad esse tenetur
+                atque ex saepe? Quas asperiores eum natus sed labore vero minus quam unde a ut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, libero! Accusamus ratione culpa nobis,
+                assumenda error officiis dolorem velit unde. Tenetur officia iusto reiciendis velit eum, exercitationem
+                maxime molestiae alias.</p>
+        </section>
+
+        <section
+            style="position: sticky; top: 0; left: 0; padding: 5px; text-align: center; background-color:aquamarine;">
+            <p>This is sticky text...</p>
+        </section>
+
+        <hr>
+        <h2>Colors</h2>
+        <section>
+            <h3>Text colors</h3>
+            <div class="content">
+                <span style="color: #333333">Primary text</span>
+                <span style="color: #999999">Secondary text</span>
+                <span style="color: #cc3300;">Error text</span>
+                <span style="color: #ffcc00">Warning text</span>
+                <span style="color: #339900">Success text</span>
+            </div>
+        </section>
+
+        <section>
+            <h3>Button colors</h3>
+            <div class="content">
+                <button class="button" style="background-color: #333333; color: #ffffff;">Primary text</button>
+                <button class="button" style="background-color: #999999; color: #ffffff;">Secondary text</button>
+                <button class="button" style="background-color: #cc3300; color: #ffffff;">Error text</button>
+                <button class="button" style="background-color: #ffcc00; color: #ffffff;">Warning text</button>
+                <button class="button" style="background-color: #339900; color: #ffffff;">Success text</button>
+            </div>
+        </section>
+
+        <hr>
+        <h2>Images</h2>
+        <section>
+            <h3>Round Image</h3>
+            <img src="./girl.png" alt="Girl" class="round-image girl-image" style="width: 700px; height: 700px;" />
+        </section>
+
+        <section>
+            <h3>Round Thumbnail</h3>
+            <img src="./girl.png" alt="Girl" class="round-image" style="padding: 5px; border: 1px solid #999999"
+                width="100" height="100">
+        </section>
+
+    </div>
+</body>
+
+</html>
